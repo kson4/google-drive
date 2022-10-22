@@ -1,0 +1,55 @@
+#home-logo {
+  width: 20px;
+}
+.top-nav {
+  padding-top: 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-nav-left {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+.top-nav-logo {
+  display: flex;
+  flex-direction: row;
+  padding-left: 2%;
+  padding-right: 5%;
+}
+
+.top-nav-search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home-search {
+  width: 80%;
+  padding-left: 5%;
+}
+.fa-magnifying-glass {
+  position: relative;
+  left: 4.5%;
+}
+.fa-sliders {
+  position: relative;
+  right: 4.5%;
+}
+
+.top-nav-right {
+  width: 40%;
+  display: flex;
+  justify-content: end;
+}
+.top-nav-right {
+  margin-right: 20px;
+}
+.fa-user {
+  margin-left: 30px;
+}
+.fa-gear {
+  margin-left: 10px;
+}
