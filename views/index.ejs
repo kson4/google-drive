@@ -41,8 +41,20 @@
       <div class="side-nav">
         <div class="add-button">
           <i class="fa-solid fa-plus fa-xl"></i>
-          <p>New</p>
+          <p class="add-button-title">New</p>
         </div>
+        <div class="add-button-lists">
+          <form action="/index" method="POST">
+            <button type="submit" name="document" value="newDocument">
+              New File
+            </button>
+          </form>
+          <button class="add-button-list">New Folder</button>
+          <button class="add-button-list">File Upload</button>
+          <button class="add-button-list">Folder Upload</button>
+          <button class="add-button-list">Google Docs</button>
+        </div>
+
         <div class="side-nav-tabs">
           <i class="fa-solid fa-hard-drive fa-xs"></i>
           <p>My Drive</p>
@@ -66,7 +78,11 @@
             <i class="fa-solid fa-circle-question fa-2xs"></i>
           </div>
         </div>
+        <% documents.forEach((document) => { %>
+        <div><%= document %></div>
+        <% }) %>
       </div>
     </div>
+    <script src="/js/home.js"></script>
   </body>
 </html>

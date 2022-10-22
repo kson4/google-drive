@@ -70,9 +70,40 @@
   justify-content: center;
   align-items: center;
   gap: 5px;
-  border: 1px solid black;
+  border: 1px solid lightgray;
   border-radius: 20px;
   font-size: 0.7em;
+  cursor: pointer;
+  box-shadow: 0px 0px 1px 1px rgba(189,182,182,0.39);
+  -webkit-box-shadow: 0px 0px 1px 1px rgba(189,182,182,0.39);
+  -moz-box-shadow: 0px 0px 1px 1px rgba(189,182,182,0.39);
+  transition: 0.2s;
+}
+.add-button:hover {
+  background-color: lightgray;
+}
+.add-button-title {
+  font-size: 0.7em;
+}
+.add-button-lists {
+  top: 42px;
+  left: 5px;
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  position: absolute;
+  z-index: -1;
+  visibility: hidden;
+  pointer-events: none;
+}
+.add-button-list {
+  display: flex;
+  padding: 5px 0;
+  padding-left: 10px;
+  font-size: 0.6em;
+  border: none;
+  cursor: pointer;
 }
 .side-nav-tabs {
   display: flex;
@@ -85,7 +116,8 @@
   width: 10px;
 }
 .side-nav-tabs > p {
-  font-size: 0.6em;
+  font-size: 0.5em;
+  color: gray;
 }
 .fa-star {
   position: relative;
