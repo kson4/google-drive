@@ -58,7 +58,7 @@
 
 /* side nav */
 .side-nav {
-  width: 14%;
+  width: 16%;
 }
 .add-button {
   margin-left: 5px;
@@ -90,4 +90,32 @@
 .fa-star {
   position: relative;
   right: 1px;
+}
+
+/* main content */
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.main-content {
+  width: 100%;
+}
+/* main content navigation */
+.main-content-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+.main-content-nav-title {
+  font-size: 0.8em;
+  margin-left: 10px;
+}
+.main-content-nav-right {
+  margin-right: 20px;
+}
+.fa-circle-question {
+  margin-left: 15px;
 }
