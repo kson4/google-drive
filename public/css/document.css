@@ -1,0 +1,28 @@
+.document-top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 40px;
+  margin-bottom: 10px;
+}
+.document-top-nav-selection {
+  height: 40px;
+  font-size: 0.75em;
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+.fa-file {
+  padding: 0 10px;
+}
+
+.document-text-area {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+#document-text-area {
+  
+  width: 80%;
+}
