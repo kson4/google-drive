@@ -107,15 +107,22 @@
   z-index: -1;
   visibility: hidden;
   pointer-events: none;
+  font-size: 0.75em;
+  background-color: white;
 }
 .add-button-list {
   width: 100%;
   display: flex;
-  padding: 5px 0;
+  padding: 5px 0px;
   padding-left: 10px;
+  margin: 5px 0;
   font-size: 0.6em;
   border: none;
   cursor: pointer;
+  background-color: white;
+}
+.add-button-list:hover {
+  background-color: lightgray;
 }
 .side-nav-tabs {
   display: flex;

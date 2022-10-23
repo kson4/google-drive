@@ -8,8 +8,8 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const documents = [];
-let id = 1;
-// module.export = { documents };
+let id = 0;
+module.export = { documents };
 
 app.get("/", (req, res) => {
   res.render("index", { documents: documents });
@@ -19,6 +19,7 @@ app.post("/index", (req, res) => {
     id: id,
     type: req.body.document,
     title: "new document",
+    content: "",
   };
   id++;
   // documents.push(req.body.newDocument);
